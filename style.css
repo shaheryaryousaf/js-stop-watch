@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('DS-DIGI.TTF');
+}
+
+body {
+    background-color: #0073AA;
+}
+
+#watch {
+    padding: 5% 0;
+}
+
+#watch .col-md-6 {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.time {
+    margin: 20px 0;
+}
+
+.timer .time span {
+    display: inline-block;
+    font-family: 'digital-clock-font',
+        sans-serif;
+    width: 24%;
+}
+
+.timer .time span h1 {
+    font-size: 54px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 0;
+    width: 32%;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-sm-lg {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #watch {
+        padding-top: 15%;
+    }
+
+    #watch .col-md-6 {
+        margin: 10px;
+    }
+
+    .timer .time span {
+        width: 23%;
+    }
+
+    .timer .time span h1 {
+        text-align: center;
+    }
+
+}

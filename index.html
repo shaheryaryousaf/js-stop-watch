@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <section id="watch">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="text-center">STOP WATCH</h1>
+
+                    <div class="timer">
+                        <div class="time text-center">
+                            <span>
+                                HOURS
+                                <h1 id="hours">0</h1>
+                            </span>
+                            <span>
+                                MINUTES
+                                <h1 id="mins">0</h1>
+                            </span>
+                            <span>
+                                SECONDS
+                                <h1 id="secs">0</h1>
+                            </span>
+                            <span>
+                                MILLISECONDS
+                                <h1 id="msecs">0</h1>
+                            </span>
+                        </div>
+                        <div class="btns text-center">
+                            <button class="btn btn-success btn-sm-lg" onclick="start()" id="start-btn">
+                                <i class="fa fa-play"></i>
+                                &nbsp;Start
+                            </button>
+                            <button class="btn btn-primary btn-sm-lg" onclick="stop()">
+                                <i class="fa fa-pause"></i>
+                                &nbsp;Stop
+                            </button>
+                            <button class="btn btn-danger btn-sm-lg" onclick="reset()">
+                                <i class="fa fa-repeat"></i>
+                                &nbsp;Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
